@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0c0d0c;color:#f1f0ec;font-family:'Archivo',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:oklch(0.76 0.17 52);text-decoration:none}a:hover{color:#f1f0ec}
+*{box-sizing:border-box}
+@keyframes pulse{0%{box-shadow:0 0 0 0 oklch(0.76 0.17 150 / .55)}100%{box-shadow:0 0 0 14px oklch(0.76 0.17 150 / 0)}}
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#0c0d0c;overflow:hidden">
+
+<!-- NAV -->
+<header style="max-width:1240px;margin:0 auto;padding:22px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap">
+  <div style="display:flex;align-items:center;gap:10px">
+    <div style="width:26px;height:26px;border-radius:8px;background:oklch(0.76 0.17 52);display:grid;place-items:center">
+      <div style="width:8px;height:8px;border-radius:50%;background:#0c0d0c"></div>
+    </div>
+    <span style="font-weight:800;font-size:19px;letter-spacing:-0.02em;font-stretch:110%">FastCall</span>
+  </div>
+  <nav style="display:flex;align-items:center;gap:28px;font-size:14px;color:#a3a69f;flex-wrap:wrap">
+    <a href="#como" style="color:#a3a69f">Cómo funciona</a>
+    <a href="#panel" style="color:#a3a69f">Panel en vivo</a>
+    <a href="#precio" style="color:#a3a69f">Precio</a>
+    <a href="https://wa.me/56994366697" style="background:#f1f0ec;color:#0c0d0c;padding:10px 18px;border-radius:999px;font-weight:700">Agendar demo</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section style="max-width:1240px;margin:0 auto;padding:56px 28px 96px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:64px;align-items:center">
+  <div>
+    <div style="display:inline-flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#a3a69f;border:1px solid #2a2d29;padding:7px 12px;border-radius:999px">
+      <span style="width:7px;height:7px;border-radius:50%;background:oklch(0.76 0.17 150);animation:pulse 1.6s infinite"></span>
+      Especial para empresas que tienen leads para vender
+    </div>
+    <h1 style="font-size:clamp(44px,6.4vw,84px);line-height:0.95;letter-spacing:-0.04em;font-weight:850;font-stretch:105%;margin:26px 0 0;text-wrap:balance">
+      Llama a cada lead en <span style="color:oklch(0.76 0.17 52)">30 segundos.</span> Sin tocar el teléfono.
+    </h1>
+    <p style="font-size:19px;line-height:1.55;color:#b4b7b0;max-width:520px;margin:26px 0 0;text-wrap:pretty">
+      Una app Android que llama sola a los leads que entran a tu CRM, desde el celular de cada vendedor. Él no elige, no marca, no busca. Solo habla.
+    </p>
+    <div style="display:flex;gap:12px;margin-top:36px;flex-wrap:wrap">
+      <a href="https://wa.me/56994366697" style="background:oklch(0.76 0.17 52);color:#0c0d0c;padding:16px 26px;border-radius:999px;font-weight:800;font-size:16px">Agendar demo</a>
+      <a href="#como" style="border:1px solid #33372f;color:#f1f0ec;padding:16px 26px;border-radius:999px;font-weight:600;font-size:16px">Ver cómo funciona</a>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;margin-top:48px;max-width:560px">
+      <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:56px;font-weight:850;letter-spacing:-0.045em;line-height:1;color:oklch(0.76 0.17 150)">+30%</span><span style="font-size:15px;line-height:1.35;color:#d7d9d2;font-weight:600">de aumento en la tasa de contactibilidad real</span></div>
+      <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:56px;font-weight:850;letter-spacing:-0.045em;line-height:1;color:oklch(0.76 0.17 52)">+15%</span><span style="font-size:15px;line-height:1.35;color:#d7d9d2;font-weight:600">de aumento en la venta</span></div>
+    </div>
+    <div style="display:flex;gap:12px 28px;margin-top:36px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;color:#8d9089;letter-spacing:0.04em;text-transform:uppercase">
+      <span>Implementación en 2 semanas</span><span>Se integra a tu CRM</span><span>Línea normal, no VoIP</span><span>Solo Android</span>
+    </div>
+  </div>
+
+  <!-- PHONE -->
+  <div style="display:flex;justify-content:center;position:relative">
+    <div style="position:absolute;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,oklch(0.76 0.17 52 / .18),transparent 65%);top:50%;left:50%;transform:translate(-50%,-50%)"></div>
+    <div style="position:relative;width:310px;border-radius:44px;background:#1b1d1a;padding:10px;border:1px solid #2f322d;box-shadow:0 40px 80px rgba(0,0,0,.5)">
+      <div style="border-radius:35px;background:#0f110f;overflow:hidden;padding:18px 18px 22px;min-height:600px;display:flex;flex-direction:column">
+        <div style="display:flex;justify-content:space-between;font-family:'JetBrains Mono',monospace;font-size:11px;color:#8d9089">
+          <span>10:42</span><span style="width:70px;height:18px;border-radius:999px;background:#000;margin-top:-4px"></span><span>4G</span>
+        </div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:18px;font-size:12px;color:#a3a69f">
+          <span style="font-weight:700;color:#f1f0ec">FastCall</span>
+          <span style="font-family:'JetBrains Mono',monospace">Cola: 7 leads</span>
+        </div>
+
+        <div style="margin-top:34px;text-align:center">
+          <sc-if value="{{ ringing }}" hint-placeholder-val="{{ true }}">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:oklch(0.76 0.17 52)">Marcando automáticamente…</div>
+          </sc-if>
+          <sc-if value="{{ inCall }}" hint-placeholder-val="{{ false }}">
+            <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:oklch(0.76 0.17 150)">En llamada · {{ callTime }}</div>
+          </sc-if>
+          <div style="width:92px;height:92px;border-radius:50%;margin:22px auto 0;background:#20231f;border:1px solid #33372f;display:grid;place-items:center;font-size:30px;font-weight:800;animation:pulse 1.6s infinite">CR</div>
+          <div style="font-size:26px;font-weight:800;letter-spacing:-0.02em;margin-top:18px">Camila Rojas</div>
+          <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:#8d9089;margin-top:6px">+56 9 8••• 4412</div>
+          <div style="display:inline-flex;gap:6px;margin-top:16px;flex-wrap:wrap;justify-content:center">
+            <span style="font-size:11px;padding:5px 9px;border-radius:999px;background:#1d201c;border:1px solid #2f322d;color:#c9ccc4">Meta Ads</span>
+            <span style="font-size:11px;padding:5px 9px;border-radius:999px;background:#1d201c;border:1px solid #2f322d;color:#c9ccc4">Toyota RAV4 2024</span>
+          </div>
+        </div>
+
+        <div style="margin-top:26px;padding:12px 14px;border-radius:14px;background:#161815;border:1px solid #262926;display:flex;justify-content:space-between;align-items:center">
+          <span style="font-size:12px;color:#a3a69f">Lead recibido hace</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:16px;font-weight:700;color:oklch(0.76 0.17 52)">{{ leadAge }}</span>
+        </div>
+
+        <div style="margin-top:20px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:#6f726b">Siguientes en tu cola</div>
+        <div style="display:flex;flex-direction:column;gap:6px;margin-top:10px">
+          <sc-for list="{{ queue }}" as="q" hint-placeholder-count="3">
+            <div style="display:flex;justify-content:space-between;font-size:13px;padding:9px 12px;border-radius:10px;background:#141614">
+              <span style="color:#d7d9d2">{{ q.name }}</span><span style="font-family:'JetBrains Mono',monospace;color:#6f726b;font-size:11px">{{ q.age }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section style="border-top:1px solid #1f221e;border-bottom:1px solid #1f221e;background:#0f110f">
+  <div style="max-width:1240px;margin:0 auto;padding:96px 28px">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#8d9089">El problema</div>
+    <h2 style="font-size:clamp(36px,5vw,68px);line-height:1;letter-spacing:-0.035em;font-weight:850;margin:20px 0 0;max-width:1000px;text-wrap:balance">
+      Todos hablan de IA conversacional. <span style="color:#6f726b">Nadie está resolviendo lo básico:</span> que una persona real llame al lead en los primeros minutos.
+    </h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:16px;margin-top:48px">
+      <div style="border:1px solid #2a2d29;border-radius:20px;padding:28px;background:#111311">
+        <h3 style="font-size:24px;font-weight:800;letter-spacing:-0.02em;line-height:1.15;margin:0">¿Sabes cuántos leads llaman al día tus ejecutivos?</h3>
+        <p style="font-size:16px;line-height:1.5;color:#a3a69f;margin:12px 0 0">Sin registro automático, no hay forma de saber quién llamó, a cuántos y cuándo.</p>
+      </div>
+      <div style="border:1px solid #2a2d29;border-radius:20px;padding:28px;background:#111311">
+        <h3 style="font-size:24px;font-weight:800;letter-spacing:-0.02em;line-height:1.15;margin:0">Se pierde tiempo digitando números.</h3>
+        <p style="font-size:16px;line-height:1.5;color:#a3a69f;margin:12px 0 0">Muchas veces los ejecutivos demoran mucho en digitar los números de teléfono. Ese tiempo es venta perdida.</p>
+      </div>
+    </div>
+    <p style="font-size:22px;color:#f1f0ec;margin:40px 0 0;font-weight:600">La IA no cierra ventas de autos. Una persona sí.</p>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<sc-if value="{{ showComparison }}" hint-placeholder-val="{{ true }}">
+<section style="max-width:1240px;margin:0 auto;padding:110px 28px">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px">
+    <!-- Bot -->
+    <div style="border:1px solid #232622;border-radius:24px;padding:32px;background:#111311">
+      <div style="display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#8d9089">
+        <span>Tu competencia</span><span>Chatbot</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px;margin-top:28px">
+        <div style="align-self:flex-end;max-width:80%;background:#22251f;padding:11px 14px;border-radius:16px 16px 4px 16px;font-size:14px;color:#d7d9d2">Hola, quiero cotizar la RAV4</div>
+        <div style="max-width:85%;background:#181a17;border:1px solid #262926;padding:11px 14px;border-radius:16px 16px 16px 4px;font-size:14px;color:#a3a69f">¡Hola! Soy Valentina, tu asistente virtual. Para ayudarte mejor, selecciona una opción: 1) Autos nuevos 2) Usados 3) Servicio técnico</div>
+        <div style="align-self:flex-end;max-width:80%;background:#22251f;padding:11px 14px;border-radius:16px 16px 4px 16px;font-size:14px;color:#d7d9d2">1</div>
+        <div style="max-width:85%;background:#181a17;border:1px solid #262926;padding:11px 14px;border-radius:16px 16px 16px 4px;font-size:14px;color:#a3a69f">¡Genial! ¿Me indicas tu RUT para continuar?</div>
+      </div>
+      <div style="margin-top:28px;padding-top:20px;border-top:1px solid #232622;font-size:15px;color:#8d9089">Resultado: el cliente sigue cotizando en otras 4 automotoras.</div>
+    </div>
+    <!-- Us -->
+    <div style="border:1px solid oklch(0.76 0.17 52 / .45);border-radius:24px;padding:32px;background:#14130f">
+      <div style="display:flex;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:oklch(0.76 0.17 52)">
+        <span>Tú</span><span>FastCall</span>
+      </div>
+      <div style="display:flex;flex-direction:column;margin-top:28px">
+        <sc-for list="{{ timeline }}" as="s" hint-placeholder-count="5">
+          <div style="display:grid;grid-template-columns:64px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid #22231d">
+            <span style="font-family:'JetBrains Mono',monospace;font-size:14px;font-weight:700;color:oklch(0.76 0.17 52)">{{ s.t }}</span>
+            <span style="font-size:15px;color:#d7d9d2">{{ s.label }}</span>
+          </div>
+        </sc-for>
+      </div>
+      <div style="margin-top:20px;font-size:15px;color:#f1f0ec">Resultado: una conversación real con alguien que quiere comprar.</div>
+    </div>
+  </div>
+  <blockquote style="margin:72px auto 0;max-width:980px;font-size:clamp(24px,2.8vw,36px);line-height:1.25;letter-spacing:-0.02em;font-weight:600;text-align:center;text-wrap:balance;color:#f1f0ec">
+    “Mientras tu competencia le manda un bot a un cliente que quiere comprar un auto de 15 millones, tú lo llamas en <span style="color:oklch(0.76 0.17 52)">30 segundos</span> con una persona real.”
+  </blockquote>
+</section>
+</sc-if>
+
+<!-- HOW -->
+<section id="como" style="max-width:1240px;margin:0 auto;padding:40px 28px 110px">
+  <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#8d9089">Cómo funciona</div>
+  <h2 style="font-size:clamp(34px,4.4vw,56px);line-height:1;letter-spacing:-0.035em;font-weight:850;margin:18px 0 0">El vendedor solo habla.</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:#232622;border:1px solid #232622;border-radius:24px;overflow:hidden;margin-top:48px">
+    <div style="background:#0f110f;padding:36px 30px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:oklch(0.76 0.17 52)">01</div>
+      <h3 style="font-size:24px;font-weight:800;letter-spacing:-0.02em;margin:40px 0 0">Entra el lead</h3>
+      <p style="font-size:16px;line-height:1.55;color:#a3a69f;margin:12px 0 0">Desde tu formulario web o Meta Ads llega al CRM, como siempre.</p>
+    </div>
+    <div style="background:#0f110f;padding:36px 30px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:oklch(0.76 0.17 52)">02</div>
+      <h3 style="font-size:24px;font-weight:800;letter-spacing:-0.02em;margin:40px 0 0">La app marca sola</h3>
+      <p style="font-size:16px;line-height:1.55;color:#a3a69f;margin:12px 0 0">En segundos el celular del vendedor ya está llamando. Primero los más recientes.</p>
+    </div>
+    <div style="background:#0f110f;padding:36px 30px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:13px;color:oklch(0.76 0.17 52)">03</div>
+      <h3 style="font-size:24px;font-weight:800;letter-spacing:-0.02em;margin:40px 0 0">Contesta o pasa al siguiente</h3>
+      <p style="font-size:16px;line-height:1.55;color:#a3a69f;margin:12px 0 0">Si no contestan, sigue con el próximo. Si contestan, le da tiempo para gestionar.</p>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:48px 40px;margin-top:80px">
+    <sc-for list="{{ features }}" as="f" hint-placeholder-count="6">
+      <div style="border-top:1px solid #2a2d29;padding-top:22px">
+        <h4 style="font-size:19px;font-weight:750;letter-spacing:-0.015em;margin:0">{{ f.title }}</h4>
+        <p style="font-size:15px;line-height:1.55;color:#a3a69f;margin:10px 0 0;text-wrap:pretty">{{ f.body }}</p>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<!-- DASHBOARD -->
+<section id="panel" style="background:#0f110f;border-top:1px solid #1f221e;border-bottom:1px solid #1f221e">
+  <div style="max-width:1240px;margin:0 auto;padding:110px 28px">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap">
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#8d9089">Para el jefe comercial</div>
+        <h2 style="font-size:clamp(34px,4.4vw,56px);line-height:1;letter-spacing:-0.035em;font-weight:850;margin:18px 0 0;max-width:640px">Todo tu equipo, en vivo.</h2>
+      </div>
+      <p style="font-size:17px;line-height:1.55;color:#a3a69f;max-width:420px;margin:0">Quién está llamando, cuántas contestan, cuánto duran y cómo rinde cada vendedor. Tiempos, estados y prioridades se ajustan desde la nube, sin tocar los teléfonos.</p>
+    </div>
+
+    <div style="margin-top:56px;border-radius:20px;border:1px solid #2a2d29;background:#121411;overflow:hidden;box-shadow:0 40px 100px rgba(0,0,0,.45)">
+      <div style="display:flex;justify-content:space-between;align-items:center;padding:16px 22px;border-bottom:1px solid #232622;gap:16px;flex-wrap:wrap">
+        <div style="display:flex;align-items:center;gap:12px">
+          <span style="width:10px;height:10px;border-radius:50%;background:#2f322d"></span><span style="width:10px;height:10px;border-radius:50%;background:#2f322d"></span><span style="width:10px;height:10px;border-radius:50%;background:#2f322d"></span>
+          <span style="font-size:14px;font-weight:700;margin-left:10px">Panel en vivo · Sucursal Las Condes</span>
+        </div>
+        <span style="display:flex;align-items:center;gap:8px;font-family:'JetBrains Mono',monospace;font-size:12px;color:oklch(0.76 0.17 150)"><span style="width:7px;height:7px;border-radius:50%;background:oklch(0.76 0.17 150);animation:pulse 1.6s infinite"></span>EN VIVO</span>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:#232622">
+        <sc-for list="{{ kpis }}" as="k" hint-placeholder-count="4">
+          <div style="background:#121411;padding:22px">
+            <div style="font-size:12px;color:#8d9089">{{ k.label }}</div>
+            <div style="font-family:'JetBrains Mono',monospace;font-size:30px;font-weight:700;margin-top:8px;letter-spacing:-0.02em">{{ k.value }}</div>
+          </div>
+        </sc-for>
+      </div>
+      <div style="overflow-x:auto">
+        <div style="min-width:720px">
+          <div style="display:grid;grid-template-columns:1.5fr 1.3fr 0.8fr 0.9fr 1.6fr 0.8fr;padding:14px 22px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#6f726b;border-top:1px solid #232622;border-bottom:1px solid #232622">
+            <span>Vendedor</span><span>Estado</span><span>Llamadas</span><span>Contest.</span><span>Tasa de contacto</span><span>Duración</span>
+          </div>
+          <sc-for list="{{ reps }}" as="r" hint-placeholder-count="5">
+            <div style="display:grid;grid-template-columns:1.5fr 1.3fr 0.8fr 0.9fr 1.6fr 0.8fr;padding:15px 22px;align-items:center;font-size:14px;border-bottom:1px solid #1c1f1b">
+              <span style="font-weight:600">{{ r.name }}</span>
+              <span style="display:flex;align-items:center;gap:8px;font-size:13px;color:{{ r.color }}"><span style="width:7px;height:7px;border-radius:50%;background:{{ r.color }}"></span>{{ r.status }}</span>
+              <span style="font-family:'JetBrains Mono',monospace">{{ r.calls }}</span>
+              <span style="font-family:'JetBrains Mono',monospace">{{ r.answered }}</span>
+              <span style="display:flex;align-items:center;gap:10px"><span style="flex:1;height:6px;border-radius:3px;background:#22251f;overflow:hidden"><span style="display:block;height:100%;width:{{ r.pct }};background:oklch(0.76 0.17 52)"></span></span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#a3a69f;width:36px">{{ r.pct }}</span></span>
+              <span style="font-family:'JetBrains Mono',monospace;color:#a3a69f">{{ r.dur }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CRM -->
+<section style="max-width:1240px;margin:0 auto;padding:110px 28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:56px;align-items:center">
+  <div>
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#8d9089">Integración</div>
+    <h2 style="font-size:clamp(34px,4.4vw,56px);line-height:1;letter-spacing:-0.035em;font-weight:850;margin:18px 0 0">Nos integramos a tu CRM.</h2>
+    <p style="font-size:17px;line-height:1.55;color:#a3a69f;margin:22px 0 0;max-width:480px">No cambias de sistema ni de proceso. Nosotros hacemos la conexión: los leads siguen entrando donde siempre y la app los llama.</p>
+    <div style="display:flex;align-items:center;gap:18px;margin-top:32px;flex-wrap:wrap">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:34px;font-weight:700;color:oklch(0.76 0.17 150);letter-spacing:-0.03em">2 semanas</span>
+      <span style="font-size:15px;line-height:1.45;color:#c9ccc4;max-width:300px">Es lo que demoramos en implementar, con integración, instalación y panel funcionando.</span>
+    </div>
+    <div style="display:flex;align-items:flex-start;gap:12px;margin-top:24px;border:1px solid #2a2d29;border-radius:14px;padding:14px 16px;background:#111311;max-width:480px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:oklch(0.76 0.17 52);padding-top:2px">Requisito</span>
+      <span style="font-size:14px;line-height:1.45;color:#d7d9d2">Los ejecutivos deben tener teléfonos Android. No está disponible para iPhone (iOS).</span>
+    </div>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;gap:12px">
+    <span style="padding:18px 24px;border-radius:16px;border:1px solid #2a2d29;font-size:18px;font-weight:700">LeadFlash</span>
+    <span style="padding:18px 24px;border-radius:16px;border:1px solid #2a2d29;font-size:18px;font-weight:700">Supabase</span>
+    <span style="padding:18px 24px;border-radius:16px;border:1px solid #2a2d29;font-size:18px;font-weight:700">Tu CRM vía API</span>
+    <span style="padding:18px 24px;border-radius:16px;border:1px dashed #3a3e36;font-size:18px;font-weight:600;color:#8d9089">Formulario web</span>
+    <span style="padding:18px 24px;border-radius:16px;border:1px dashed #3a3e36;font-size:18px;font-weight:600;color:#8d9089">Meta Ads</span>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="precio" style="max-width:1240px;margin:0 auto;padding:0 28px 110px">
+  <div style="border-radius:28px;border:1px solid #2a2d29;background:#111311;padding:clamp(32px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:48px">
+    <div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;text-transform:uppercase;color:#8d9089">Precio</div>
+      <h2 style="font-size:clamp(32px,3.8vw,48px);line-height:1;letter-spacing:-0.035em;font-weight:850;margin:18px 0 0">Simple. Funcionando en 2 semanas.</h2>
+      <p style="font-size:16px;line-height:1.55;color:#a3a69f;margin:18px 0 0">Incluye integración con tu CRM, instalación en los celulares del equipo y panel en vivo.</p>
+    </div>
+    <div style="border-left:1px solid #2a2d29;padding-left:clamp(0px,3vw,40px)">
+      <div style="font-size:14px;color:#a3a69f">Implementación</div>
+      <div style="display:flex;align-items:baseline;gap:10px;margin-top:14px">
+        <span style="font-size:72px;font-weight:850;letter-spacing:-0.04em;line-height:1">50</span>
+        <span style="font-size:20px;font-weight:700">UF</span><span style="font-size:15px;color:#8d9089">+ IVA</span>
+      </div>
+      <div style="font-size:13px;color:#8d9089;margin-top:10px">Pago único</div>
+    </div>
+    <div style="border-left:1px solid #2a2d29;padding-left:clamp(0px,3vw,40px)">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+        <span style="font-size:14px;color:#a3a69f">Mensual</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;text-transform:uppercase;background:oklch(0.76 0.17 52);color:#0c0d0c;padding:4px 9px;border-radius:999px;font-weight:700">Promoción</span>
+      </div>
+      <div style="font-size:22px;color:#6f726b;text-decoration:line-through;margin-top:14px;font-weight:600">10 UF + IVA</div>
+      <div style="display:flex;align-items:baseline;gap:10px;margin-top:4px">
+        <span style="font-size:72px;font-weight:850;letter-spacing:-0.04em;line-height:1;color:oklch(0.76 0.17 52)">7</span>
+        <span style="font-size:20px;font-weight:700">UF</span><span style="font-size:15px;color:#8d9089">+ IVA / mes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="demo" style="border-top:1px solid #1f221e">
+  <div style="max-width:1240px;margin:0 auto;padding:120px 28px;text-align:center">
+    <h2 style="font-size:clamp(40px,6vw,88px);line-height:0.95;letter-spacing:-0.045em;font-weight:850;margin:0 auto;max-width:1000px;text-wrap:balance">Tu próximo lead entra en minutos. <span style="color:oklch(0.76 0.17 52)">¿Quién lo va a llamar?</span></h2>
+    <div style="display:flex;justify-content:center;gap:12px;margin-top:44px;flex-wrap:wrap">
+      <a href="https://wa.me/56994366697" style="background:oklch(0.76 0.17 52);color:#0c0d0c;padding:18px 30px;border-radius:999px;font-weight:800;font-size:17px">Agendar demo por WhatsApp</a>
+      <a href="tel:+56994366697" style="border:1px solid #33372f;color:#f1f0ec;padding:18px 30px;border-radius:999px;font-weight:600;font-size:17px">Llamar +56 9 9436 6697</a>
+    </div>
+    <div style="margin-top:28px;font-size:15px;color:#a3a69f">Vicente Torres · <a href="tel:+56994366697" style="color:#f1f0ec">+56 9 9436 6697</a></div>
+  </div>
+  <footer style="max-width:1240px;margin:0 auto;padding:28px;border-top:1px solid #1f221e;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:#6f726b">
+    <span>FastCall · Santiago, Chile · Vicente Torres +56 9 9436 6697</span><span>Marcador automático para equipos comerciales automotrices</span>
+  </footer>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;animate&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;},&quot;showComparison&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Secciones&quot;}}">
+class Component extends DCLogic {
+  state = { t: 0 };
+  componentDidMount() { this.iv = setInterval(() => { if (this.props.animate ?? true) this.setState(s => ({ t: s.t + 1 })); }, 1000); }
+  componentWillUnmount() { clearInterval(this.iv); }
+  renderVals() {
+    const cyc = this.state.t % 14;
+    const ringing = cyc < 5;
+    const pad = n => String(n).padStart(2, '0');
+    const age = 3 + cyc;
+    const G = 'oklch(0.76 0.17 150)', O = 'oklch(0.76 0.17 52)', M = '#8d9089';
+    return {
+      ringing, inCall: !ringing,
+      callTime: '00:' + pad(Math.max(0, cyc - 5)),
+      leadAge: '00:' + pad(age),
+      showComparison: this.props.showComparison ?? true,
+      queue: [{ name: 'Matías Fuentes', age: '1 min' }, { name: 'Javiera Soto', age: '3 min' }, { name: 'Felipe Araya', age: '6 min' }],
+      timeline: [
+        { t: '00:00', label: 'Lead entra desde Meta Ads' },
+        { t: '00:02', label: 'Llega al CRM y a la cola del vendedor' },
+        { t: '00:04', label: 'La app marca sola desde su celular' },
+        { t: '00:28', label: 'Camila contesta' },
+        { t: '00:30', label: '“Hola Camila, te llamo por la RAV4…”' }
+      ],
+      features: [
+        { title: 'Marcado automático', body: 'Los leads nuevos se llaman solos, en orden de prioridad. Los más recientes primero.' },
+        { title: 'Velocidad de contacto', body: 'El lead llega del formulario web o Meta Ads y en segundos ya está sonando el teléfono.' },
+        { title: 'Sin intervención manual', body: 'El vendedor no elige a quién llamar, no marca números, no pierde tiempo.' },
+        { title: 'Detección inteligente', body: 'Si no contestan, pasa al siguiente automáticamente. Si contestan, le da tiempo para gestionar.' },
+        { title: 'Cola exclusiva por vendedor', body: 'Cada vendedor tiene sus propios leads. No se mezclan entre el equipo.' },
+        { title: 'Línea normal, no VoIP', body: 'Usa la línea telefónica del celular. Al cliente le llega una llamada normal, no suena raro.' },
+        { title: 'Configuración en vivo', body: 'Tiempos de espera, estados llamables y prioridades se ajustan desde la nube, sin tocar los teléfonos.' },
+        { title: 'Panel para el jefe comercial', body: 'Quién está llamando, cuántas contestadas, duración y rendimiento por vendedor, en tiempo real.' },
+        { title: 'Conectado a tu CRM', body: 'LeadFlash, Supabase o cualquier CRM vía API. Nosotros hacemos la integración.' }
+      ],
+      kpis: [
+        { label: 'Llamadas hoy', value: String(214 + Math.floor(this.state.t / 7)) },
+        { label: 'Contestadas', value: '61%' },
+        { label: 'Tiempo a primer contacto', value: '0:34' },
+        { label: 'Duración promedio', value: '3:12' }
+      ],
+      reps: [
+        { name: 'Ignacio Pérez', status: ringing ? 'Marcando' : 'En llamada', color: ringing ? O : G, calls: 52, answered: 34, pct: '65%', dur: '3:40' },
+        { name: 'Daniela Muñoz', status: 'En llamada', color: G, calls: 47, answered: 30, pct: '64%', dur: '3:05' },
+        { name: 'Rodrigo Vargas', status: ringing ? 'En llamada' : 'Marcando', color: ringing ? G : O, calls: 44, answered: 25, pct: '57%', dur: '2:58' },
+        { name: 'Catalina Reyes', status: 'Marcando', color: O, calls: 39, answered: 24, pct: '62%', dur: '3:21' },
+        { name: 'Tomás Contreras', status: 'En pausa', color: M, calls: 32, answered: 17, pct: '53%', dur: '2:47' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
