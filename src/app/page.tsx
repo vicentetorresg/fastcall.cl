@@ -193,7 +193,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex flex-wrap gap-3">
-          {["LeadFlash", "Supabase", "Tu CRM vía API"].map((c) => (
+          {["LeadFlash", "Supabase", "Tu CRM vía API", "WhatsApp API"].map((c) => (
             <span key={c} className="rounded-2xl border px-6 py-[18px] text-lg font-bold" style={{ borderColor: "var(--color-border-3)" }}>{c}</span>
           ))}
           {["Formulario web", "Meta Ads"].map((c) => (
