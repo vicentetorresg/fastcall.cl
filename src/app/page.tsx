@@ -13,6 +13,7 @@ const features = [
   { title: "Configuración en vivo", body: "Tiempos de espera, estados llamables y prioridades se ajustan desde la nube, sin tocar los teléfonos." },
   { title: "Panel para el jefe comercial", body: "Quién está llamando, cuántas contestadas, duración y rendimiento por vendedor, en tiempo real." },
   { title: "Conectado a tu CRM", body: "LeadFlash, Supabase o cualquier CRM vía API. Nosotros hacemos la integración." },
+  { title: "WhatsApp automático con IA", body: "Si no contestan la llamada, el sistema envía un WhatsApp automático con inteligencia artificial. El lead recibe un mensaje personalizado al instante." },
 ];
 
 const timeline = [
@@ -21,6 +22,7 @@ const timeline = [
   { t: "00:04", label: "La app marca sola desde su celular" },
   { t: "00:28", label: "Camila contesta" },
   { t: "00:30", label: "\u201CHola Camila, te llamo por la RAV4\u2026\u201D" },
+  { t: "00:32", label: "Si no contesta → WhatsApp con IA al instante" },
 ];
 
 export default function Home() {
@@ -53,7 +55,7 @@ export default function Home() {
             Llama a cada lead en <span style={{ color: "var(--color-orange)" }}>30 segundos.</span> Sin tocar el teléfono.
           </h1>
           <p className="mt-[26px] max-w-[520px]" style={{ fontSize: 19, lineHeight: 1.55, color: "var(--color-text-body)" }}>
-            Una app Android que llama sola a los leads que entran a tu CRM, desde el celular de cada vendedor. Él no elige, no marca, no busca. Solo habla.
+            Una app Android que llama sola a los leads que entran a tu CRM, desde el celular de cada vendedor. Si no contestan, les llega un WhatsApp con IA al instante. Él no elige, no marca, no busca. Solo habla.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <a href={WA} className="rounded-full px-[26px] py-4 text-base font-[800] transition-opacity duration-150 hover:opacity-90" style={{ background: "var(--color-orange)", color: "var(--color-bg)" }}>Agendar demo</a>
@@ -70,7 +72,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-9 flex flex-wrap uppercase" style={{ fontFamily: "var(--font-jetbrains)", fontSize: 12, color: "var(--color-text-subtle)", letterSpacing: "0.04em", gap: "12px 28px" }}>
-            <span>Implementación en 2 semanas</span><span>Se integra a tu CRM</span><span>Línea normal, no VoIP</span><span>Solo Android</span>
+            <span>Implementación en 2 semanas</span><span>Se integra a tu CRM</span><span>WhatsApp con IA incluido</span><span>Línea normal, no VoIP</span><span>Solo Android</span>
           </div>
         </div>
 
@@ -94,7 +96,7 @@ export default function Home() {
               <p className="mt-3 text-base leading-normal" style={{ color: "var(--color-text-muted)" }}>Muchas veces los ejecutivos demoran mucho en digitar los números de teléfono. Ese tiempo es venta perdida.</p>
             </div>
           </div>
-          <p className="mt-10 text-[22px] font-semibold" style={{ color: "var(--color-text-primary)" }}>La IA no cierra ventas de autos. Una persona sí.</p>
+          <p className="mt-10 text-[22px] font-semibold" style={{ color: "var(--color-text-primary)" }}>La IA no cierra ventas de autos. Una persona sí. Y si no contesta, un WhatsApp con IA mantiene el contacto.</p>
         </div>
       </section>
 
@@ -142,6 +144,7 @@ export default function Home() {
             { n: "01", title: "Entra el lead", body: "Desde tu formulario web o Meta Ads llega al CRM, como siempre." },
             { n: "02", title: "La app marca sola", body: "En segundos el celular del vendedor ya está llamando. Primero los más recientes." },
             { n: "03", title: "Contesta o pasa al siguiente", body: "Si no contestan, sigue con el próximo. Si contestan, le da tiempo para gestionar." },
+            { n: "04", title: "WhatsApp con IA si no contestan", body: "El lead que no contestó recibe un WhatsApp automático con IA. Se mantiene el contacto sin esfuerzo del vendedor." },
           ].map((s) => (
             <div key={s.n} className="px-[30px] py-9" style={{ background: "var(--color-band)" }}>
               <div className="text-[13px]" style={{ fontFamily: "var(--font-jetbrains)", color: "var(--color-orange)" }}>{s.n}</div>
